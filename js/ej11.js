@@ -9,6 +9,8 @@ function miFunc() {
     for(i=0;i<TIRADAS;i++){
         suma=(Math.round(Math.random() * (6 - 1) + 1))+(Math.round(Math.random() * (6 - 1) + 1));
         cadena.push(suma)
+        
+
     }
     console.log(cadena);
 }

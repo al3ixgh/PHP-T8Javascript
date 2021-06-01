@@ -38,18 +38,21 @@ function miFuncFecha() {
 //EJERCICIO ACTUAL 
 function escapeHTML(cadena) {
     if (/([\&\\\<\>]?)$/.test(cadena)) {
+        console.log(typeof(cadena));
         alert("la cadena contiene algun caracter especial");
     }
     else {
         alert("la cadena no contiene ningun caracter especial");
     }
-    var cadena2 = cadena.replace(/\&/gi, 'asdg')
-    console.log(cadena2);
+    var aux=cadena
+    aux = aux.replace(/\&/g, 'a')
+    
 }
 
 function miFuncCadena() {
     var cadena = document.getElementById("cadena").value;
     console.log(cadena);
+    console.log(typeof(cadena));
     escapeHTML(cadena);
 }
 
